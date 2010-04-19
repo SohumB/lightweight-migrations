@@ -1,0 +1,19 @@
+This is a very quick and hackish lightweight approach to migrations for sql
+schema stored in git repositories.
+
+./install.sh <your git repo> will create the directory structure you need in
+your git repository.
+
+It tries to do the right thing with regard to relative paths, git roots, and the
+repository initial state. It explicitly does not try to do the right thing for
+branching schema or rewinding, which are hard and make me want to go
+shopping. Also, there are probably better ways to install a project like this
+that maintain repository-ness.
+
+Be sure to also read maintenance/README and to create maintenance/run_sql after
+you've installed this.
+
+Only depends on git, /bin/sh, and the existence of /dev/null.
+
+Inspired by Rails migrations and
+http://www.reddit.com/r/programming/comments/bhkas/why_your_database_version_control_strategy_sucks/c0msv31
