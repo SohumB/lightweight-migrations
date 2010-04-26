@@ -8,7 +8,9 @@ It tries to do the right thing with regard to relative paths, git roots, and the
 repository initial state. It explicitly does not try to do the right thing for
 branching schema or rewinding, which are hard and make me want to go
 shopping. Also, there are probably better ways to install a project like this
-that maintain repository-ness.
+that maintain repository-ness. *Also*, realistically idempotent sql change
+scripts tend to be ugly and very unDRY. Let's just say that This Can Be
+Improved.
 
 Be sure to also read maintenance/README and to create maintenance/run_sql after
 you've installed this.
